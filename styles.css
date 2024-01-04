@@ -8,7 +8,37 @@ body {
     padding: 0;
     font-family: Marianne;
     overflow-x: hidden;
+    cursor: none;
 }
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #0000003e;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+#logo {
+    display: flex;
+    flex-direction:column; /* Ajoutez cette ligne pour définir la direction en ligne */
+    background: linear-gradient(#62cdff, #62cdff), linear-gradient(transparent, transparent);
+    text-align: center;
+    padding: 5px;
+}
+
+#logo img {
+    width: 20vw; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    transition: transform 0.3s ease; /* Ajoute une transition pour une animation douce */
+}
+
+#logo img:hover {
+    transform: scale(1.2); /* Ajustez la valeur de l'échelle selon vos besoins */
+}
+
 
 nav {
     position: fixed;
@@ -25,6 +55,7 @@ nav {
 }
 
 section {
+    font-size: 1em;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -39,6 +70,7 @@ section {
 }
 
 #shop {
+    flex-direction: column;
     background: linear-gradient(#02afff, #0073e6), linear-gradient(transparent, transparent);
     /* Ajouter un dégradé de couleur pour la section Boutique et un dégradé transparent */
 }
@@ -50,9 +82,51 @@ section {
 
 /* Ajouter des règles de média query pour rendre le site responsive */
 
-@media only screen and (max-width: 600px) {
-    nav {
-        font-size: 16px;
+@media only screen and (max-width: 768px) {
+    #logo img {
+        width: 70vw;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        margin: 15px;
+    }
+
+    .shoe-case {
+        width: 80%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .shoe-case img {
+        max-width: 150px;
+    }
+
+    .shoe-case h2 {
+        font-size: 1em;
+    }
+
+    .add-to-cart-btn,
+    .view-more-btn {
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    #shop {
+        flex-direction: column;
+    }
+
+    #home,
+    #shop,
+    #contact {
+        margin-bottom: 20px;
     }
 }
 
@@ -62,7 +136,112 @@ footer {
     padding: 15px;
     text-align: center;
 }
-.logo {
-    width: 40%; /* Ajustez la largeur selon vos besoins */
-    height: auto; /* Pour conserver les proportions originales de l'image */
+
+section p {
+    margin: 30px; /* Ajustez la valeur de la marge selon vos besoins */
 }
+
+#shop {
+    background: linear-gradient(#02afff, #0073e6), linear-gradient(transparent, transparent);
+    flex-direction: row;
+}
+
+.shoe-case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid #00000000; /* Ajoutez une bordure pour séparer les cases */
+    border-radius: 20px;
+}
+
+.shoe-case img {
+    width: 100%;
+    max-width: 200px; /* Ajustez la taille maximale de l'image selon vos besoins */
+    height: auto;
+    transition: transform 0.3s ease; /* Ajoute une transition pour une animation fluide */
+}
+
+.shoe-case:hover img {
+    transform: scale(1.2); /* Ajustez la valeur pour l'effet d'agrandissement souhaité */
+}
+
+
+.add-to-cart-btn,
+.view-more-btn {
+    background-color: transparent;
+    border: 2px solid; /* Bordure de 2 pixels */
+    border-radius: 20px; /* Bords arrondis de 20 pixels */
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Ajoute une transition pour une animation douce */
+}
+
+.add-to-cart-btn:hover,
+.view-more
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#contactForm label {
+    margin-top: 10px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    background-color: #0073e6;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #0056a3;
+}
+#contact textarea {
+    background-color: #001996; /* Remplacez par la couleur bleu foncé de votre choix */
+    color: rgb(0, 0, 0); /* Ajoutez une couleur de texte blanche pour contraster */
+}
+
+#metamask-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Ajustez la marge supérieure selon vos besoins */
+}
+
+.metamask-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px 10px 40px; /* Ajustez les valeurs de la marge à droite selon vos besoins */
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px; /* Ajustez la marge inférieure selon vos besoins */
+    background: url('img/Metamask-Logo.png') no-repeat 10px center; /* Ajoutez le chemin de votre logo Metamask */
+    background-size: 20px; /* Ajustez la taille du logo Metamask selon vos besoins */
+}
+
+img {
+    width: 50px; /* Ajustez la largeur du logo Metamask selon vos besoins */
+
+}
+

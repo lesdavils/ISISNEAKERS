@@ -7,32 +7,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <section id="logo">
+        <a href="#home" id="logoLink">
+            <img src="img/Untitled-removebg-preview.png" alt="Logo du site">
+        </a>
+        <div id="metamask-connect">
+            <button class="metamask-btn">Connect to Metamask</button>
+            
+        </div>
+
+    </section>
+
+    
+
     <nav onclick="scrollToSection(event)">
       <span id="homeLink">Accueil</span> | <span id="shopLink">Boutique</span> | <span id="contactLink">Contact</span>
     </nav>
 
     <section id="home">
-        <h1>Bienvenue chez</h1>
-        <img class="logo" src="img/Untitled-removebg-preview.png" alt="Description de l'image">
-        <p>Le nom « sneakers » a pour origine le verbe anglais « to sneak » signifiant « se déplacer furtivement » et donc silencieusement. Il fait référence au silence des semelles en caoutchouc au sol, contrairement aux chaussures habillées à semelle en cuir dur standard, bruyantes.</p>
+        <video id="background-video" loop autoplay muted>
+            <source src="video/sneakers-background.mp4" type="video/mp4">
+        </video>
+        <h1>Découvrez les Sneakers NFT Exclusives</h1>
+        <p>Bienvenue chez <strong>ISIsneakers</strong>, votre destination exclusive pour les Sneakers NFT. Nous <strong>révolutionnons</strong> l'industrie de la mode en combinant le monde <strong>physique</strong> et <strong>numérique</strong>.</p>
+
+        <p>Nos <strong>Sneakers NFT</strong> sont bien plus que des chaussures. Chaque paire est une <strong>œuvre d'art numérique unique</strong>, créée par des artistes talentueux du monde entier. En achetant une Sneaker NFT, vous possédez une part de cette créativité exceptionnelle.</p>
+
+        <p>Explorez notre boutique virtuelle et découvrez des collections uniques en édition limitée. Chaque paire est associée à un <strong>token non fongible (NFT)</strong>, <strong>assurant l'authenticité et la rareté de votre acquisition.</strong></p>
+
+        <p>Laissez-vous emporter par l'histoire derrière chaque Sneaker NFT. De la conception à la blockchain, chaque étape de notre processus est transparente, vous garantissant une expérience unique dans le monde de la mode digitale.</p>
+
+        <p>Rejoignez la révolution des Sneakers NFT chez ISIsneakers. <strong>Portez l'avenir, soyez l'exception.</strong></p>
     </section>
 
     <section id="shop">
         <h1>Explorez notre boutique</h1>
-        <p>Trouvez la paire parfaite qui correspond à votre style.</p>
+        <div class="shoe-case">
+            <img src="img/j4nobg.png" alt="Nom de la chaussure 1">
+            <h2>Jordan 4 Metallic Green</h2>
+            <p>Prix: 342 €*</p>
+            <button class="add-to-cart-btn">Ajouter au panier</button>
+            <button class="view-more-btn">Voir plus</button>
+        </div>
+    
+        <div class="shoe-case">
+            <img src="img/yeezy350nobg.png" alt="Nom de la chaussure 2">
+            <h2>Yeezy 350</h2>
+            <p>Prix: 1970 €*</p>
+            <button class="add-to-cart-btn">Ajouter au panier</button>
+            <button class="view-more-btn">Voir plus</button>
+        </div>
+    
+        <div class="shoe-case">
+            <img src="img/350yeezyfuturistnobg.png" alt="Nom de la chaussure 3">
+            <h2>Jordan 1 Retro Off-White University Blue</h2>
+            <p>Prix: 80 €</p>
+            <button class="add-to-cart-btn">Ajouter au panier</button>
+            <button class="view-more-btn">Voir plus</button>
+        </div>
+
     </section>
 
     <section id="contact">
         <h1>Contactez-nous</h1>
         <p>Des questions? N'hésitez pas à nous contacter.</p>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
     
     <footer>
       <p>&copy; 2024 SneakersDirect. Tous droits réservés.</p>
     </footer>
 
+    <div id="cursor"></div>
     <script src="script.js"></script>
 
-    
 </body>
 </html>

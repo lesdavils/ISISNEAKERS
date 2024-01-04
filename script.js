@@ -22,3 +22,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener('mousemove', function (e) {
+    const cursor = document.getElementById('cursor');
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Ajoutez ici le code pour traiter le formulaire, par exemple, envoyer un e-mail, etc.
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Ajouter un écouteur d'événements pour le clic sur le logo
+    document.getElementById('logoLink').addEventListener('click', scrollToHome);
+
+    function scrollToHome(event) {
+        event.preventDefault(); // Empêche le comportement de lien par défaut
+
+        window.scrollTo({
+            top: document.getElementById('home').offsetTop,
+            behavior: 'smooth' // Utilisez 'smooth' pour un défilement doux
+        });
+    }
+
+    // Ajouter d'autres écouteurs d'événements au besoin
+});
