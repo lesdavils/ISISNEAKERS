@@ -52,3 +52,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Ajouter d'autres écouteurs d'événements au besoin
 });
+
+//POPUPPPPPP
+
+
+// Ajoutez cette ligne pour récupérer la référence de votre barre de navigation
+const navBar = document.querySelector('nav');
+
+// ...
+
+function openPopup() {
+    popup.style.display = 'flex';
+    navBar.classList.add('popup-active');
+}
+
+function closePopup() {
+    popup.style.display = 'none';
+    navBar.classList.remove('popup-active');
+}
+

@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SneakersDirect - Votre destination pour les meilleures chaussures</title>
+    <title>ISISneakers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Ajoutez cette div pour la fenêtre modale -->
+    <div id="agePopup" class="popup">
+        <div class="popup-content">
+            <h2>Vérification de l'âge</h2>
+            <p>Êtes-vous âgé de 18 ans ou plus?</p>
+            <button onclick="confirmAge()">Oui</button>
+            <button onClick="google.com">Non</button>
+        </div>
+    </div>
+
+
     <section id="logo">
+        <video id="background-video" loop autoplay muted>
+            <source src="img/Gen-2 8s, 3996524313, cam_R 03, cam_Z -10, cam_P 43.mp4" type="video/mp4">
+        </video>
+        
         <a href="#home" id="logoLink">
             <img src="img/Untitled-removebg-preview.png" alt="Logo du site">
         </a>
         <div id="metamask-connect">
             <button class="metamask-btn">Connect to Metamask</button>
-            
         </div>
-
+        
     </section>
-
-    
 
     <nav onclick="scrollToSection(event)">
       <span id="homeLink">Accueil</span> | <span id="shopLink">Boutique</span> | <span id="contactLink">Contact</span>
     </nav>
 
     <section id="home">
-        <video id="background-video" loop autoplay muted>
-            <source src="video/sneakers-background.mp4" type="video/mp4">
-        </video>
-        <h1>Découvrez les Sneakers NFT Exclusives</h1>
+        <div id="home-content">
+            <h1>Découvrez les Sneakers NFT Exclusives</h1>
         <p>Bienvenue chez <strong>ISIsneakers</strong>, votre destination exclusive pour les Sneakers NFT. Nous <strong>révolutionnons</strong> l'industrie de la mode en combinant le monde <strong>physique</strong> et <strong>numérique</strong>.</p>
 
         <p>Nos <strong>Sneakers NFT</strong> sont bien plus que des chaussures. Chaque paire est une <strong>œuvre d'art numérique unique</strong>, créée par des artistes talentueux du monde entier. En achetant une Sneaker NFT, vous possédez une part de cette créativité exceptionnelle.</p>
@@ -91,6 +101,28 @@
 
     <div id="cursor"></div>
     <script src="script.js"></script>
+<script>
+    function showAgePopup() {
+        document.getElementById('agePopup').style.display = 'block';
+    }
 
+    // Fonction appelée lorsque l'utilisateur confirme son âge
+    function confirmAge() {
+        document.getElementById('agePopup').style.display = 'none';
+    }
+
+    // Affichez la fenêtre modale au chargement de la page
+    window.onload = showAgePopup;
+    function closePopup() {
+    popup.style.display = 'none';
+    navBar.classList.remove('popup-active');
+}
+
+    function redirect() {
+    closePopup(); // Ferme la fenêtre modale
+    window.location.href = 'google.com'; // Remplacez par l'URL souhaitée
+}
+
+</script>
 </body>
 </html>

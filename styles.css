@@ -15,22 +15,24 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    border: 4px solid #0000003e;
+    border: 4px solid #ffffffb9;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
 
 #logo {
+    position: relative;
+    height: 100vh;
     display: flex;
-    flex-direction:column; /* Ajoutez cette ligne pour définir la direction en ligne */
-    background: linear-gradient(#62cdff, #62cdff), linear-gradient(transparent, transparent);
-    text-align: center;
-    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 #logo img {
-    width: 20vw; /* Ajustez la largeur selon vos besoins */
+    width: 35vw; /* Ajustez la largeur selon vos besoins */
     height: auto;
     transition: transform 0.3s ease; /* Ajoute une transition pour une animation douce */
 }
@@ -49,7 +51,7 @@ nav {
     padding: 15px;
     text-align: center;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     cursor: pointer;
     margin-top: 2em;
 }
@@ -65,8 +67,10 @@ section {
 }
 
 #home {
-    background: linear-gradient(#62cdff, #02afff), linear-gradient(transparent, transparent);
-    /* Ajouter un dégradé de couleur pour la section Accueil et un dégradé transparent */
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(#6fd1ff, #02afff), linear-gradient(transparent, transparent);
+    overflow: hidden;
 }
 
 #shop {
@@ -187,18 +191,19 @@ section p {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 #contactForm label {
-    margin-top: 10px;
+    margin-top: 40px;
+    color: #fff;
 }
 
 #contactForm input,
 #contactForm textarea {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
+    margin-top: 20px;
     box-sizing: border-box;
 }
 
@@ -210,13 +215,14 @@ section p {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 #contactForm button:hover {
     background-color: #0056a3;
 }
 #contact textarea {
-    background-color: #001996; /* Remplacez par la couleur bleu foncé de votre choix */
+    background-color: #ffffff; /* Remplacez par la couleur bleu foncé de votre choix */
     color: rgb(0, 0, 0); /* Ajoutez une couleur de texte blanche pour contraster */
 }
 
@@ -245,3 +251,76 @@ img {
 
 }
 
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#metamask-connect {
+    z-index: 1;
+}
+
+#metamask-connect button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background: url('img/Metamask-Logo.png') no-repeat 10px center;
+    background-size: 20px;
+}
+
+#home {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    overflow: hidden;
+}
+
+#home-content {
+    padding: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+nav.popup-active {
+    pointer-events: none;
+    display: none;
+}
