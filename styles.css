@@ -259,7 +259,7 @@ section p {
     cursor: pointer;
     margin-bottom: 5px;
     /* Ajustez la marge inférieure selon vos besoins */
-    background: url('img/Metamask-Logo.png') no-repeat 10px center;
+    background: url('img/Metamask-Logo.png') no-repeat 20px center;
     /* Ajoutez le chemin de votre logo Metamask */
     background-size: 20px;
     /* Ajustez la taille du logo Metamask selon vos besoins */
@@ -324,7 +324,7 @@ img {
 }
 
 .popup-content {
-    background: #6d6d6d;
+    background: #ffffffbe;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -512,4 +512,11 @@ a {
 #airdrop-text {
     color: #fff;
     /* Blanc */
+}
+
+.blurred-video {
+    filter: blur(5px);
+    /* Ajustez la valeur pour contrôler l'intensité du flou */
+    -webkit-filter: blur(5px);
+    /* Pour une compatibilité avec les navigateurs basés sur WebKit (comme Chrome et Safari) */
 }
