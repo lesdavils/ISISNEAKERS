@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Ajouter un écouteur d'événements pour le clic sur le lien "Accueil"
     document.getElementById('homeLink').addEventListener('click', scrollToTop);
 
@@ -28,16 +28,16 @@ document.addEventListener('mousemove', function (e) {
     cursor.style.left = e.pageX + 'px';
     cursor.style.top = e.pageY + 'px';
 });
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
 
-    contactForm.addEventListener('submit', function(event) {
+    contactForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
         // Ajoutez ici le code pour traiter le formulaire, par exemple, envoyer un e-mail, etc.
     });
 });
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Ajouter un écouteur d'événements pour le clic sur le logo
     document.getElementById('logoLink').addEventListener('click', scrollToHome);
 
@@ -53,13 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ajouter d'autres écouteurs d'événements au besoin
 });
 
-//POPUPPPPPP
-
-
 // Ajoutez cette ligne pour récupérer la référence de votre barre de navigation
 const navBar = document.querySelector('nav');
-
-// ...
 
 function openPopup() {
     popup.style.display = 'flex';

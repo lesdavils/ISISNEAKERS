@@ -33,13 +33,16 @@ body {
 }
 
 #logo img {
-    width: 35vw; /* Ajustez la largeur selon vos besoins */
+    width: 35vw;
+    /* Ajustez la largeur selon vos besoins */
     height: auto;
-    transition: transform 0.3s ease; /* Ajoute une transition pour une animation douce */
+    transition: transform 0.3s ease;
+    /* Ajoute une transition pour une animation douce */
 }
 
 #logo img:hover {
-    transform: scale(1.2); /* Ajustez la valeur de l'échelle selon vos besoins */
+    transform: scale(1.2);
+    /* Ajustez la valeur de l'échelle selon vos besoins */
 }
 
 
@@ -143,7 +146,8 @@ footer {
 }
 
 section p {
-    margin: 30px; /* Ajustez la valeur de la marge selon vos besoins */
+    margin: 30px;
+    /* Ajustez la valeur de la marge selon vos besoins */
 }
 
 #shop {
@@ -157,37 +161,43 @@ section p {
     align-items: center;
     margin: 20px;
     padding: 10px;
-    border: 3px solid #00000000; /* Ajoutez une bordure pour séparer les cases */
+    border: 3px solid #00000000;
+    /* Ajoutez une bordure pour séparer les cases */
     border-radius: 20px;
 }
 
 .shoe-case img {
     width: 100%;
-    max-width: 200px; /* Ajustez la taille maximale de l'image selon vos besoins */
+    max-width: 200px;
+    /* Ajustez la taille maximale de l'image selon vos besoins */
     height: auto;
-    transition: transform 0.3s ease; /* Ajoute une transition pour une animation fluide */
+    transition: transform 0.3s ease;
+    /* Ajoute une transition pour une animation fluide */
 }
 
 .shoe-case:hover img {
-    transform: scale(1.2); /* Ajustez la valeur pour l'effet d'agrandissement souhaité */
+    transform: scale(1.2);
+    /* Ajustez la valeur pour l'effet d'agrandissement souhaité */
 }
 
 
 .add-to-cart-btn,
 .view-more-btn {
     background-color: transparent;
-    border: 2px solid; /* Bordure de 2 pixels */
-    border-radius: 20px; /* Bords arrondis de 20 pixels */
+    border: 2px solid;
+    /* Bordure de 2 pixels */
+    border-radius: 20px;
+    /* Bords arrondis de 20 pixels */
     color: black;
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Ajoute une transition pour une animation douce */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Ajoute une transition pour une animation douce */
 }
 
 .add-to-cart-btn:hover,
-.view-more
-#contactForm {
+.view-more #contactForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,33 +232,42 @@ section p {
 #contactForm button:hover {
     background-color: #0056a3;
 }
+
 #contact textarea {
-    background-color: #ffffff; /* Remplacez par la couleur bleu foncé de votre choix */
-    color: rgb(0, 0, 0); /* Ajoutez une couleur de texte blanche pour contraster */
+    background-color: #ffffff;
+    /* Remplacez par la couleur bleu foncé de votre choix */
+    color: rgb(0, 0, 0);
+    /* Ajoutez une couleur de texte blanche pour contraster */
 }
 
 #metamask-connect {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px; /* Ajustez la marge supérieure selon vos besoins */
+    margin-top: 10px;
+    /* Ajustez la marge supérieure selon vos besoins */
 }
 
 .metamask-btn {
     background-color: #0073e6;
     color: white;
-    padding: 10px 20px 10px 40px; /* Ajustez les valeurs de la marge à droite selon vos besoins */
+    padding: 10px 20px 10px 40px;
+    /* Ajustez les valeurs de la marge à droite selon vos besoins */
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    margin-bottom: 5px; /* Ajustez la marge inférieure selon vos besoins */
-    background: url('img/Metamask-Logo.png') no-repeat 10px center; /* Ajoutez le chemin de votre logo Metamask */
-    background-size: 20px; /* Ajustez la taille du logo Metamask selon vos besoins */
+    margin-bottom: 5px;
+    /* Ajustez la marge inférieure selon vos besoins */
+    background: url('img/Metamask-Logo.png') no-repeat 10px center;
+    /* Ajoutez le chemin de votre logo Metamask */
+    background-size: 20px;
+    /* Ajustez la taille du logo Metamask selon vos besoins */
 }
 
 img {
-    width: 50px; /* Ajustez la largeur du logo Metamask selon vos besoins */
+    width: 50px;
+    /* Ajustez la largeur du logo Metamask selon vos besoins */
 
 }
 
@@ -305,7 +324,7 @@ img {
 }
 
 .popup-content {
-    background: #ffffff;
+    background: #6d6d6d;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -334,7 +353,8 @@ nav.popup-active {
 #body.product-page {
     background-color: #000;
     color: #fff;
-    overflow-x: hidden; /* Ajoutez cette propriété pour éviter une éventuelle barre de défilement horizontale */
+    overflow-x: hidden;
+    /* Ajoutez cette propriété pour éviter une éventuelle barre de défilement horizontale */
 }
 
 #product {
@@ -345,21 +365,151 @@ nav.popup-active {
 }
 
 #product-video {
-    width: 100%; /* Utilisez une largeur de 100% pour que la vidéo soit responsive */
-    max-width: 400px; /* Ajustez la largeur maximale de la vidéo selon vos besoins */
-    height: auto; /* Permettez à la hauteur de s'ajuster automatiquement pour maintenir les proportions */
+    width: 100%;
+    /* Utilisez une largeur de 100% pour que la vidéo soit responsive */
+    max-width: 400px;
+    /* Ajustez la largeur maximale de la vidéo selon vos besoins */
+    height: auto;
+    /* Permettez à la hauteur de s'ajuster automatiquement pour maintenir les proportions */
 }
 
 /* Pour ajuster la taille de l'image dans la page produit */
 #product img {
-    max-width: 100%; /* Ajustez la taille maximale de l'image selon vos besoins */
-    height: auto; /* Permettez à la hauteur de s'ajuster automatiquement pour maintenir les proportions */
+    max-width: 100%;
+    /* Ajustez la taille maximale de l'image selon vos besoins */
+    height: auto;
+    /* Permettez à la hauteur de s'ajuster automatiquement pour maintenir les proportions */
 }
 
 #product h1 {
-    margin-top: 5em; /* Ajustez la valeur de la marge en fonction de vos besoins */
+    margin-top: 1em;
+    /* Ajustez la valeur de la marge en fonction de vos besoins */
 }
 
-.music {
-    z-index: 1;
+
+
+a {
+    text-decoration: none;
+}
+
+.shoe-case h2 {
+    text-decoration: none;
+    /* Supprime le soulignement */
+    color: #000;
+    /* Couleur du texte par défaut */
+    transition: color 0.3s ease;
+    /* Ajoute une transition de couleur au survol */
+}
+
+#home-content h1:hover,
+.shoe-case h2:hover {
+    color: #2c2cff;
+    /* Change la couleur du texte au survol */
+    text-decoration: none;
+    /* Supprime le soulignement au survol */
+}
+
+/* Style du texte du prix */
+.green-price,
+.product-price {
+    text-decoration: none;
+    /* Supprime le soulignement */
+    color: #00ff00;
+    /* Couleur verte pour le prix */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Ajoute une transition de couleur au survol */
+}
+
+.green-price:hover,
+.product-price:hover {
+    color: #009c73;
+    /* Change la couleur du texte au survol */
+    text-decoration: none;
+    /* Supprime le soulignement au survol */
+}
+
+
+
+.red-price,
+.product-price {
+    text-decoration: none;
+    /* Supprime le soulignement */
+    color: #ff0000;
+    /* Couleur verte pour le prix */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Ajoute une transition de couleur au survol */
+}
+
+.red-price:hover,
+.product-price:hover {
+    color: #ff6060;
+    /* Change la couleur du texte au survol */
+    text-decoration: none;
+    /* Supprime le soulignement au survol */
+}
+
+.airdrop-form-article {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.airdrop-form-article #airdrop-text {
+    font-size: 24px;
+    color: #808080;
+    /* Gris clair */
+}
+
+.airdrop-form-article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.airdrop-form-article label {
+    font-size: 16px;
+    color: #808080;
+    /* Gris clair */
+}
+
+.airdrop-form-article input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #808080;
+    /* Gris clair */
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.airdrop-form-article button {
+    background-color: #808080;
+    /* Gris clair */
+    color: #fff;
+    /* Texte en blanc */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.airdrop-form-article button:hover {
+    background-color: #a4a4a4;
+    /* Gris légèrement plus foncé au survol */
+}
+
+
+
+
+
+.airdrop {
+    color: #000;
+    background-color: #000;
+}
+
+#airdrop-text {
+    color: #fff;
+    /* Blanc */
 }

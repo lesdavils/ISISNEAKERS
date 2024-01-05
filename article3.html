@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISISneakers - Yeezy 350 V2 Bone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #product {
+            height: 100vh;
+            /* Utiliser la hauteur de l'écran pour le contenu */
+            overflow-y: auto;
+            /* Activer le défilement vertical pour le contenu si nécessaire */
+        }
+
+        /* Styles pour le bouton de retour */
+        #back-to-home-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #808080;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #back-to-home-btn:hover {
+            background-color: #a4a4a4;
+        }
+    </style>
+</head>
+
+<body class="product-page">
+    <!-- Bouton pour retourner à l'accueil -->
+    <button id="back-to-home-btn" onclick="window.location.href='index.html'">Retour à l'accueil</button>
+
+    <section id="product">
+        <h1>Yeezy 350 V2 Bone NFT</h1>
+        <video id="product-video" loop autoplay muted>
+            <source src="video/article3-1.mp4" type="video/mp4">
+        </video>
+        <audio class="music" loop autoplay>
+            <source src="music/🎹 Balade futuriste [1000 grammes de son].mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge l'élément audio.
+        </audio>
+        <p class="green-price">&#x2198 0,73240 ETH</p>
+        <p class="green-price">&#x2248 1517,62$</p>
+        <p class="product-description">Explorez l'harmonie parfaite entre style urbain et innovation numérique avec la
+            Yeezy 350 V2 Bone NFT. Cette sneaker emblématique de la collection Yeezy fusionne le monde tangible et le
+            monde numérique, créant une pièce unique qui transcende les frontières du design traditionnel.</p>
+        <button class="add-to-cart-btn">Ajouter au panier</button>
+    </section>
+    <section class="airdrop">
+        <div class="airdrop" id="airdrop-form">
+            <h1 id="airdrop-text">Participe au Airdrop</h1>
+            <form id="airdrop-form" class="airdrop-form-article" action="#" method="post">
+                <label for="ethereum-address">Adresse Ethereum :</label>
+                <input type="text" id="ethereum-address" name="ethereum-address" placeholder="0x00000000219......">
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <div id="cursor"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
